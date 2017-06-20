@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C58114941EF95E6400CEF08E /* testingCarthage2.h in Headers */ = {isa = PBXBuildFile; fileRef = C58114921EF95E6400CEF08E /* testingCarthage2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C581149B1EF95E7700CEF08E /* testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C581149A1EF95E7700CEF08E /* testing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C581148F1EF95E6400CEF08E /* testingCarthage2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = testingCarthage2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58114921EF95E6400CEF08E /* testingCarthage2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testingCarthage2.h; sourceTree = "<group>"; };
 		C58114931EF95E6400CEF08E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C581149A1EF95E7700CEF08E /* testing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		C58114911EF95E6400CEF08E /* testingCarthage2 */ = {
 			isa = PBXGroup;
 			children = (
+				C581149A1EF95E7700CEF08E /* testing.swift */,
 				C58114921EF95E6400CEF08E /* testingCarthage2.h */,
 				C58114931EF95E6400CEF08E /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					C581148E1EF95E6400CEF08E = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C581149B1EF95E7700CEF08E /* testing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +244,7 @@
 		C58114981EF95E6400CEF08E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -250,6 +256,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Pankaj.ramchandani.testingCarthage2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,6 +264,7 @@
 		C58114991EF95E6400CEF08E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
